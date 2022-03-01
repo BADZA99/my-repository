@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+
+*{
+    text-decoration: none;
+}
+body{
+    padding: 0 2%;
+  font-family: 'Noto Sans JP',sans-serif;  
+}
+nav{
+    display: flex;   /* permet d'aligner les elements dans nav */
+    flex-wrap: wrap;    /* permet d'aller a la ligne lorsque les elements ne rentre pas sur une ligne */
+    justify-content: space-between; /* laisse un espace entre les elements dans nav en loccurence div et ul*/
+    align-items: center;   /*va centrer les elements dans nav (les aligner)*/
+    position: sticky;     /* permet de fixer le nav*/
+    top: 0;               /* le fixer tout en haut de la page*/
+    background-color: white;
+}
+nav .profile{
+    display: flex; /*pour aligner*/
+    align-items: center;
+    font-family: 'Oswald',sans-serif;
+}
+nav .profile img{   /* img dans profile qui est lui meme dans dans profile */ 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* 50% pour arrondir au maximum*/
+    margin: auto;
+    object-fit: cover; /*remettre l'image a sa taille normal*/
+}
+nav .profile img:hover{
+    background: url('profile.jpeg') no-repeat;
+
+}
+
+nav .profile h1{
+    margin-left: 10px; /* marge a l'exterieur a gauche de h1*/
+    font-size: 15px;   /* taille de la police de h1*/
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none; /*enleve les puces de li*/
+}
+
+nav ul li {
+    margin-left: 20px;
+    cursor: pointer;  /* met un pointeur sur les li pour indiquer a l'utilisateur qu'il faut cliquer dessus*/
+    border-bottom: solid white 2px;
+    color: #000;
+}
+
+nav ul li:hover{
+    border-bottom-color: black;
+}
+
+.lien{
+    font-family:'Oswald',sans-serif ;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.page-content{
+    margin: 4%; /* marge a l'exterieur de page en haut en bas a gauche et a droite de 4%*/
+}
+.page-content header{
+    margin-top: 5%; /*decaler le header encore de 4% par rapport au nav*/
+    max-width: 80%;
+}
+.page-content header p{
+    line-height: 30px; /*pour mettre un espace entre les lignes de 30px*/
+    color: #818181;
+}
+.page-content header button{
+    background-color: inherit; /* inherit pour donner a button la couleur de son parent*/
+    border: none; /* pour enlever toute les bordures de button*/
+    outline: none; /* pour enlever la couleur autour de la bouton quand on clic dessus */
+    padding: 0; /* pour enlever les marges inside du bouton pour aligner le bouton et le texte*/
+    font-size: 15px; /* pour la taille de la texte du bouton*/
+    font-weight: bold;
+    padding-bottom: 5px; /* pour mettre un espace entre le button et la bordure*/
+    border-bottom: solid red 1px;
+    cursor: pointer;
+}
+
+
+.page-content header h1{
+    margin: 0; /* pour enlever les margin a l'exterieur par defaut*/
+    text-transform: uppercase; /*mettre le h1 en majuscule*/
+    font-family: 'Oswald',sans-serif;   /* mettre la police de h1 en oswald*/
+    font-size: 6vw; /* view width ici on demande au h1 de prendre 6% de la largeur*/
+}
+
+.page-content header button:hover{
+    border-bottom-color:black ;
+    color: red;
+
+}
+.about .max-width .title{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Oswald',sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    text-decoration: underline black;
+}
+
+.about .about-content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.about .leftside{
+    width: 40%;
+}
+.about .leftside img{
+    width: 450px;
+    height:350px;
+    border-radius: 2%;
+    object-fit: cover;
+}
+.about .rightside{
+    width: 60%;
+    padding-left: 70px;
+    padding-top: 50px;
+}
+.about .rightside .text{
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP',sans-serif ;
+}
+.about .rightside .text span{
+    color:crimson;
+    font-weight: bolder;
+}
+
+.about .rightside p{
+    text-align: justify; /* pour justifier le texte */
+    font-size: 25px;
+    font-family:'Oswald',sans-serif ;
+}
+
+
+
+
+/* .page-content .presentation-image{
+    margin-top: 5%;   /* descendre par rapport header de 5% 
+}*/
+
+/* .page-content .presentation-image img{
+      max-width: 100%;  /*pour lui dire d'occuper toute la largeur de la page */
+      /* height: auto; */
+
+
+/* .page-content .presentation-image:hover{
+    filter: brightness(50%); /*pour baisser la lumunosite de l'image de 50% quand on place le curseur dessus*/
+    /* transition: filter 0.5s;
+} */ 
+
+
+.page-content .projects-section{
+    margin-top: 6%; /* decaler la section par rapport section precedent*/
+}
+.page-content .projects-section h1{
+    font-family: 'Oswald',sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 200;
+    text-decoration: underline;
+}
+.page-content .projects-section .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.page-content .projects-section .projects .project{
+    max-width: 300px;
+    margin-right: 20px;
+    max-height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.page-content .projects-section .projects .project h4{
+    margin:0;
+    font-family:'Oswald',sans-serif ;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+
+
+.page-content .projects-section .projects .project .description{
+    font-size: 13px;
+    max-width: 300px;
+    text-align: justify;
+}
+
+.myteam .coop {
+    width: 280px;
+    height: 250px;
+    background-color: #000;
+    color: white;
+    justify-content: center;
+
+}
+.team{
+    padding-top: 30px;
+}
+.team .coop img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* padding: 40px auto; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* padding-right: 90px; */
+}
+.team .coop p{
+    text-align: center;
+    padding: top 0 ;
+    padding-bottom: 70px;
+    font-family:'Oswald',sans-serif   ;
+}
+.team .coop span{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, sans-serif;
+    color: #1fb3bf;
+}
+.myteam{
+    display: flex;
+    justify-content: space-around;
+}
+/* .myteam .coop{
+   
+} */
+.team h1{
+    text-align: center;
+    font-size: 40px;
+    font-family:'Oswald',sans-serif ;
+    font-weight: 200;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+.contact{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* pour mettre un espace autour des elements*/
+    justify-content: space-around; 
+    background-color: white;
+    color: black;
+    gap: 6px;
+    padding: 10px;
+    font-family: 'Oswald',sans-serif;
+}
+.contact .right{
+    font-size: 15px;
+    color:black;
+    cursor: pointer;
+    
+}
+.contact .left p{
+    padding-top: 20px;
+}
+
+
+.contact{
+    display: flex;
+}
+.contact h3{
+    font-family: 'Oswald',sans-serif;
+    font-size: 25px;
+}
+.contact form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+.contact form input,
+textarea{
+    width: 47%;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    height: 25px;
+    border-bottom: solid 2px #1fb3bf;
+}
+.contact form input:hover{
+    border-bottom: #1fb3bf;
+
+}
+.contact form textarea:hover{
+    border-bottom: #1fb3bf;
+    
+}
+textarea{
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100%;
+}
+
+.right form button{
+    width: 170px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1fb3bf;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    outline: none;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+/* PARTIE RESPONSIVE DU SITE */
+
+@media screen and (max-width: 700px){        /* si la taille de l'ecran est inferieur ou egal a 700px le code s'execute*/
+      /* code ..... */
+    nav{
+          justify-content: center; /* pour centrer le nav */
+      }
+    nav ul {
+        display: none;   /*pour que les onglets disparaissent au format mobile*/
+    }  
+
+    .page-content header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+     
+  .page-content .projects-section{
+      margin-top: 15%;
+  }
+
+  .page-content .projects-section h1{
+      font-size: 1.5em;   /* em unite pour agrandir du texte de sa taille initiale (on agrandi 1,5 fois plus grand)  par defaut c 1em*/
+
+  }
+  .page-content .projects-section .projects .project{
+      margin-right: 0;
+      margin-bottom: 20px;
+      max-width: 100%;
+  }
+
+  .contact{
+      justify-content: flex-start; /*les elements vont commencer au debut de notre .contact */
+  }
+  .contact .column{
+      width: 80%; /*permet d'empiler chaque element meme si ca rentre dans une ligne*/
+  }
+}

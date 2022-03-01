@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+    data-auto-a11y="true">
+    </script>
+    <title>My Portfolio</title>
+</head>
+<body>
+   
+    <nav >  <!-- la barre de navigation -->
+        <div class="profile" >
+             <img src="images/profile.jpeg" alt="profile photo">
+             <h1>PAPA BADARA NDIAYE</h1>
+        </div>
+        <ul>
+            <a href="#head" class="lien">
+                <li>Acceuil</li>
+            </a>
+            <a href="#about" class="lien">
+                <li>A propos</li>
+            </a>
+            <a href="#competences" class="lien">
+                <li>Compétences</li>
+            </a>
+            <a href="#team" class="lien">
+                <li>Mon equipe</li>
+            </a>
+            <a href="#contact" class="lien">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+    <div  id="head"></div>
+    <section class="page-content"> 
+        <!-- <a name="head"></a> -->
+        <header> <!-- entete du contenu de la page -->
+            <h1>salut, je suis étudiant en génie logiciel</h1>
+            <!-- description du header -->
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                debitis, facilis aliquam voluptates fugiat ipsum odio, nihil
+                architecto fuga laboriosam tempore necessitatibus quas? Incidunt nobis
+                ducimus vel, delectus sit quod Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.</p> -->
+            <button>Dites Bonjour</button>    
+        </header>
+
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">A propos de Moi</h2>
+                <div class="about-content">
+                    <div class="leftside">
+                        <img src="images/prog.jpg" alt="presentation-image">
+                    </div>
+                    <div class="rightside">
+                        <div class="text">Je suis Etudiant en <span>Génie Logiciel</span></div>
+                        <p>j'ai obtenu mon bac S2 avec mention assez bien à l'ecole college notre
+                        dame du liban. J'etudie actuellement à ISI (institut superieur d'informatique)
+                        qui se trouve à Dakar.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+         <!-- section competences -->
+        <section class="projects-section" id="competences">
+            <center>
+                <h1>Mes compétences</h1>
+            </center>
+            <div class="projects">
+                <div class="project">
+                    <h4>Developpeur HTML/CSS</h4>
+                    <p class="description">	Ici, nous vous proposons un cours structuré qui vous apprendra tout ce que vous devez savoir pour 
+                        devenir un développeur Web front-end. Parcourez simplement chaque section, en apprenant de nouvelles compétences
+                         (ou en améliorant celles existantes) au fur et à mesure. 
+                    </p>    
+                </div>
+                <div class="project">
+                    <h4>Developpeur javascript</h4>
+                    <p class="description">	Développe des services ou des sites internet par l'intermédiaire de cahiers des charges réalisés par les chefs de projet. Il préconise et met en œuvre une solution 
+                        technique pour concevoir des sites sur mesure ou adapter des solutions techniques existantes..
+                    </p>    
+                </div>
+                <div class="project">
+                    <h4>Developpeur unity</h4>
+                    <p class="description">	Un développeur Unity est un expert en programmation possédant 
+                        la formation et l'expérience nécessaires pour utiliser Unity. Il est responsable de la planification et de
+                         la mise en œuvre des fonctionnalités d'un jeu sur tous types de support.
+                        </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="team" id="team">
+            <h1>Mon equipe</h1>
+            <div class="myteam">
+                <div class="coop"><center><img src="images/moneira.jpg" alt=""><p><span>Moneira</span> <br><br> Le disigner</p></center></div>
+                <div class="coop"><center><img src="images/shaifer.jpg" alt=""><p><span>Shaifer</span> <br><br> Le maintenancier</p></center> </div>
+                <div class="coop"><center><img src="images/Xavier.jpg" alt=""><p><span>Xavier</span> <br><br> Chef de projet</p></center> </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="left">
+                <h3>Me contacter</h3>
+                <p><i class=" fas fa-light fa-envelope"></i> pndiaye999@gmail.com</p>
+                <p><i class=" fas fa-solid fa-address-book"></i>: 106 zone de captage</p>
+                <p> <i class=" fas fa-solid fa-phone"></i> : +221 77 432 76 40</p>
+            </div>
+    
+            <div class="right">
+                <div class="title-contact">
+                    <h3>M'envoyer un mesage</h3>
+                </div>
+                <form action="#" method="post">
+                    <input type="text" name="NOM" placeholder="Entrer votre nom..." required="" >
+                    <input type="e-mail" placeholder="votre mail">
+                    <input type="subject" placeholder="sujet">
+                    <input type="number" placeholder="votre numero">
+                    <textarea name="message" placeholder="Entrer un message"></textarea>
+                    <button type="submit">ENVOYER</button>
+                </form>
+            </div>
+            
+        </section>
+    </section>
+
+</body>
+</html>
